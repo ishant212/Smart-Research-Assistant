@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Research Assistant</title>
+    <link rel="stylesheet" href="sidepanel.css"> 
+</head>
+<body>
+<div class="container">
+    
+    <!-- 🔹 Header -->
+    <div class="header">
+        <h2>Research Assistant</h2>
+    </div>
+
+    <!-- 🔹 Text Operations -->
+    <div class="section">
+        <h3>Text Operations</h3>
+        <div class="actions">
+            <button id="summarizeTextBtn">Summarize Text</button>
+        </div>
+    </div>
+
+    <!-- 🔹 Code Operations -->
+    <div class="section">
+        <h3>Code Operations</h3>
+        <div class="actions">
+            <button id="summarizeCodeBtn">Summarize Code</button>
+            <button id="suggestCodeBtn">Suggest Code</button>
+            <button id="fixBtn">Fix</button>
+            <button id="explainBtn">Explain</button>
+            <button id="testcasesBtn">Testcases</button>
+            <button id="optimizeBtn">Optimize</button>
+        </div>
+    </div>
+
+    <!-- 🔹 Notes Section -->
+    <div class="notes">
+        <h3>Research Notes</h3>
+        <textarea id="notes" placeholder="Take notes here"></textarea>
+        <button id="saveNotesBtn">Save Notes</button>
+    </div>
+
+    <!-- 🔹 Results Display -->
+    <div id="results"></div>
+</div>
+<script src="sidepanel.js"></script>
+</body>
+</html>
