@@ -234,6 +234,38 @@ All configuration lives in `application.properties`:
 
 > ⚠️ **Never commit your API key to version control.** Use environment variables or a secrets manager in production.
 
+## 9. Configuration
+
+All configuration lives in `application.properties`:
+
+| Property | Description |
+|----------|-------------|
+| `gemini.api.url` | Base URL for the Gemini AI endpoint |
+| `gemini.api.key` | Your Google Gemini API key |
+
+> ⚠️ **Never commit your API key to version control.** Use environment variables or a secrets manager in production.
+
+### Using Environment Variables
+
+Instead of hardcoding your API key, you can set it as an environment variable:
+
+#### Windows
+```bash
+set GEMINI_API_KEY=your_api_key_here
+```
+
+#### Mac/Linux
+```bash
+export GEMINI_API_KEY=your_api_key_here
+```
+
+Then in `application.properties`:
+
+```properties
+gemini.api.url=https://generativelanguage.googleapis.com/v1beta/models/gemini-pro:generateContent?key=
+gemini.api.key=${GEMINI_API_KEY}
+```
+
 ---
 
 ## 10. Future Improvements
