@@ -9,6 +9,18 @@
 
 ---
 
+## Screenshots
+
+| Landing Page | Summarization |
+|---|---|
+| ![Landing Page](assets/Landing_page.png) | ![Summarization](assets/summarization.png) |
+
+| Explaining Code | Fixing Code |
+|---|---|
+| ![Explaining Code](assets/explaining_code.png) | ![Fixing Code](assets/fixing_code.png) |
+
+---
+
 ## Table of Contents
 
 1. [Overview](#1-overview)
@@ -152,17 +164,25 @@ curl -X POST http://localhost:8080/api/research/process \
 ```
 research-assistant/
 │
+├── assets/
+│   ├── Landing_page.png
+│   ├── summarization.png
+│   ├── explaining_code.png
+│   └── fixing_code.png
+│
 ├── src/main/java/com/research/Assistant/
-│   ├── ResearchAssistantApplication.java   # Spring Boot entry point
-│   ├── ResearchController.java             # REST controller — POST /api/research/process
-│   ├── ResearchService.java                # Core logic — prompt builder + Gemini API call
-│   ├── ResearchRequest.java                # Request DTO (content, operation)
-│   └── GeminiResponse.java                 # Response model for Gemini JSON parsing
+│   ├── ResearchAssistantApplication.java
+│   ├── ResearchController.java
+│   ├── ResearchService.java
+│   ├── ResearchRequest.java
+│   └── GeminiResponse.java
 │
 ├── src/main/resources/
-│   └── application.properties              # Gemini API URL and key configuration
+│   └── application.properties
 │
-└── pom.xml                                 # Maven dependencies
+├── pom.xml              # Maven dependencies
+├── LICENSE
+└── README.md            
 ```
 
 ---
