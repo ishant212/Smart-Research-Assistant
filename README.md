@@ -192,7 +192,7 @@ research-assistant/
 ### Step 1 — Clone the Repository
 
 ```bash
-git clone https://github.com/your-username/research-assistant
+git clone https://github.com/ishant212/Smart-Research-Assistant
 cd research-assistant
 ```
 
